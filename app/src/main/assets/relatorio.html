@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <title>FORMAPP</title>
+    <meta charset="UTF-8">
+    <title>Gas App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script></head>
+
+<body>
+<section>
+    <div class="report">
+        <p> Registro usuários</p>
+        <textarea id="mostrar" disabled name="message" rows="30" cols="45" id="text"></textarea>
+    </div>
+
+    <div class="container">
+        <button class="btn btn-primary font-weight-bold" onclick="consulta()">Mostrar Relatório</button>
+        <button type="submit" class="btn btn-danger font-weight-bold" onclick="abrir()">Voltar para a página inicial</button>
+    </div>
+
+</section>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script  src="js/index.js"></script>
+<script>
+      function consulta() {
+        document.getElementById("mostrar").value = Android.consulta();
+      }
+       function abrir() {
+          Android.abrir()
+          }
+    </script>
+</body>
+</html>

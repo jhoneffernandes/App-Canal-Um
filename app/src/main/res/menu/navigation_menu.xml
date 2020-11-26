@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuInicial"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Início" />
+
+    <item
+        android:id="@+id/menuLogin"
+        android:icon="@drawable/ic_baseline_verified_user_24"
+        android:title="Login Administrativo" />
+
+    <item
+        android:id="@+id/menuSobre"
+        android:icon="@drawable/ic_baseline_radio_24"
+        android:title="A Rádio" />
+
+
+</menu>

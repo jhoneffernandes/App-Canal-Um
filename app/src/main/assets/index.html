@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canal Um FM Mobile - Peça uma música na rádio!</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+
+</head>
+<body class="container bg-light">
+
+<div class="row d-flex justify-content-center my-1">
+
+
+    <form class="col-12 mb-5">
+        <div class="form-group my-5">
+            <label class="h3 text-center d-flex justify-content-center text-primary text-bold">Digite seu nome</label>
+            <input id="nome" type="text" class="form-control my-4" name="nome" placeholder="Digite seu nome">
+        </div>
+        <div class="form-group my-5">
+            <label class="h3 d-flex justify-content-center text-primary text-bold text-center">Digite sua mensagem</label>
+            <input id="mensagem" type="text" class="form-control my-4" name="mensagem" placeholder="Digite sua mensagem">
+        </div>
+        <div class="form-group my-5">
+            <label class="h3 d-flex justify-content-center text-primary text-bold text-center">Digite a música que deseja pedir</label>
+            <input id="musica" type="text" class="form-control my-4" name="musica" placeholder="Digite a música que deseja pedir">
+        </div>
+        <div class="form-group my-5">
+            <label class="h3 d-flex justify-content-center text-primary text-bold text-center">Digite o artista que canta a música</label>
+            <input id="artista" type="text" class="form-control my-4" name="artista" placeholder="Digite o artista que canta a música">
+        </div>
+        <div class="d-flex justify-content-around">
+            <button type="submit" class="btn btn-primary font-weight-bold" onclick="inserir()">Enviar opinião</button>
+            <button type="submit" class="btn btn-danger font-weight-bold" onclick="abrir()">Voltar para a página inicial</button>
+
+        </div>
+    </form>
+
+</div>
+
+
+
+<footer>
+    <script>
+        function inserir() {
+        var nome = document.getElementById("nome").value;
+        var mensagem = document.getElementById("mensagem").value;
+        var musica = document.getElementById("musica").value;
+        var artista = document.getElementById("artista").value;
+
+            Android.grava(nome, mensagem, musica, artista)
+        }
+
+         function abrir() {
+          Android.abrir()
+          }
+        </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</footer>
+
+
+
+</body>
+</html>
