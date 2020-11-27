@@ -19,4 +19,24 @@ public class NewsActivity extends AppCompatActivity {
         i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
+    public void pagnew1(View view)
+    {
+        Intent i;
+        i = new Intent(this, New1Activity.class);
+        startActivity(i);
+    }
+
+    public void pagnew2(View view)
+    {
+        Intent i;
+        i = new Intent(this, New2Activity.class);
+        startActivity(i);
+    }
+
+    public void pagnew3(View view)
+    {
+       Intent i;
+        i = new Intent(this, New3Activity.class);
+       startActivity(i);
+   }
 }
